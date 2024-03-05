@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">FirstApp</string>
+    <string name="idade_text">Idade: </string>
+    <string name="digite_seu_nome">Digite seu nome: </string>
+    <string name="ano_nascimento">Digite seu ano de nascimento: </string>
+    <string name="button">Enviar</string>
+    <string name="nome">Nome:</string>
+    <string name="telefone">Telefone</string>
+    <string name="digite_seu_numero">Digite seu Numero</string>
+    <string name="email">Email</string>
+    <string name="digite_seu_email">Digite seu Email</string>
+    <string name="enviar_string">Enviar</string>
 </resources>
