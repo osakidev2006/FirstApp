@@ -10,4 +10,6 @@
     <string name="email">Email</string>
     <string name="digite_seu_email">Digite seu Email</string>
     <string name="enviar_string">Enviar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
