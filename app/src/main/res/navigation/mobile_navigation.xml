@@ -6,18 +6,27 @@
     app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/calculFragment"
-        android:name="com.rafael.firstapp.view.CalculFragment"
-        android:label="fragment_calcul"
-        tools:layout="@layout/fragment_calcul" />
+        android:id="@+id/homeFragment"
+        android:name="com.rafael.firstapp.view.HomeFragment"
+        android:label="First App"
+        tools:layout="@layout/fragment_home"/>
 
     <fragment
         android:id="@+id/verificaFragment"
         android:name="com.rafael.firstapp.view.VerificaFragment"
         android:label="fragment_verifica"
         tools:layout="@layout/fragment_verifica" />
+
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.rafael.firstapp.view.HomeFragment"
-        android:label="HomeFragment" />
+        android:id="@+id/pessoaFragment"
+        android:name="com.rafael.firstapp.view.PessoaFragment"
+        android:label="Pessoa"
+        tools:layout="@layout/fragment_pessoa" />
+    <fragment
+        android:id="@+id/allPessoasFragment"
+        android:name="com.rafael.firstapp.view.AllPessoasFragment"
+        android:label="fragment_all_pessoas"
+        tools:layout="@layout/fragment_all_pessoas" />
+
+
 </navigation>

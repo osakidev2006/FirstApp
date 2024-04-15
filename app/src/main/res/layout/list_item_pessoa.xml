@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/lblNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Rafael" />
+
+            <TextView
+                android:id="@+id/lblIdade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idade: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvIdade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17" />
+
+            <TextView
+                android:id="@+id/lblFaixa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    Faixa: "
+                android:textSize="16sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvFaixa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ola"
+                android:textSize="16sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:id="@+id/lblSexo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Sexo: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imghomem"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/homenicon" />
+
+            <ImageView
+                android:id="@+id/imgfemale"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/femaleicon" />
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

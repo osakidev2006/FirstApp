@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.CalculFragment">
+    tools:context=".view.PessoaFragment">
 
 
     <!-- TODO: Update blank fragment layout -->
@@ -35,17 +35,43 @@
     <EditText
         android:id="@+id/edtAnoNascimento"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:hint="@string/ano_nascimento"
         android:inputType="number" />
+
+    <TextView
+        android:id="@+id/tvSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo: "
+        android:textSize="24sp" />
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:id="@+id/btnMasculino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masculino" />
+
+    <RadioButton
+        android:id="@+id/btnFeminino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Feminino" />
+</RadioGroup>
 
 
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="@string/button"
-        android:textStyle="bold"
-        android:layout_gravity="center" />
+        android:textStyle="bold" />
+
+
+
 
 </LinearLayout>
