@@ -65,13 +65,23 @@
 
     <Button
         android:id="@+id/btnEnviar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/button"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"/>
 
-
+    <Button
+        android:id="@+id/btnDeletar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Excluir"
+        android:textStyle="bold"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        />
 
 
 </LinearLayout>

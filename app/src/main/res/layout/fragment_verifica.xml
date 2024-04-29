@@ -8,28 +8,47 @@
     tools:context=".view.VerificaFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:id="@+id/tvTelefone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/telefone"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="250dp" />
+        android:text="Telefone: "
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/edtNumero"
+        android:layout_width="385dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Digite seu número:"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="39dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="385dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Digite seu email:"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:text="@string/digite_seu_numero"
-        android:layout_marginEnd="120dp"
-        android:inputType="number"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/enviar_string"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -37,40 +56,13 @@
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textSize="20sp"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="274dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Email:"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="112dp" />
 
 
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="@string/digite_seu_email"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="120dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enviar_string"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="260dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

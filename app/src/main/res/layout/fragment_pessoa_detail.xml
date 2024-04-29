@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PessoaDetailFragment">
+
+
+    <TextView
+        android:id="@+id/lblNameDetail"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:text="Nome:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblIdadeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Idade: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNameDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblSexoDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Sexo: "
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblIdadeDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblFaixaDetail"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="26dp"
+        android:text="Faixa Etária: "
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSexoDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNomeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="Lord Missunga"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/lblNameDetail"
+        app:layout_constraintStart_toStartOf="@+id/lblNameDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblNameDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvIdadeDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:text="32"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/lblIdadeDetail"
+        app:layout_constraintStart_toStartOf="@+id/lblIdadeDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblIdadeDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvSexoDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="94dp"
+        android:text="Masculino"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/lblSexoDetail"
+        app:layout_constraintStart_toStartOf="@+id/lblSexoDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblSexoDetail"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvFaixaDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adulto"
+        android:textStyle="italic"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lblFaixaDetail"
+        app:layout_constraintStart_toEndOf="@+id/lblFaixaDetail"
+        app:layout_constraintTop_toTopOf="@+id/lblFaixaDetail"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgMascul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

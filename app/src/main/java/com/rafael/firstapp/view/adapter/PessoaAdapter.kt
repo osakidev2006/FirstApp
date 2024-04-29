@@ -9,24 +9,29 @@ import com.rafael.firstapp.service.model.Pessoa
 
 class PessoaAdapter(pessoa: List<Pessoa>?, private val clickListListener: (Pessoa) -> Unit) :
     RecyclerView.Adapter<PessoaAdapter.PessoaViewHolder>() {
+
+        // Criar uma lista vazia de pessoas
     private var pessoaList: List<Pessoa> = arrayListOf()
 
 
     class PessoaViewHolder(private val binding: ListItemPessoaBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
+            // Carregar as informações da pessoa na lista
         fun bind(pessoa: Pessoa, clickListListener: (Pessoa) -> Unit) {
             binding.tvNome.text = pessoa.nome
             binding.tvIdade.text = pessoa.idade.toString()
             binding.tvFaixa.text = pessoa.faixa
 
             if (pessoa.sexo == "Masculino"){
-                binding.imghomem.visibility = View.VISIBLE
-                binding.imgfemale.visibility = View.GONE
+                binding.imgMascul.visibility = View.VISIBLE
+                binding.imgFemin.visibility = View.GONE
             }else{
-                binding.imghomem.visibility = View.GONE
-                binding.imgfemale.visibility = View.VISIBLE
+                binding.imgMascul.visibility = View.GONE
+                binding.imgFemin.visibility = View.VISIBLE
             }
 
+                // Configura o click de algum item da lista
             binding.root.setOnClickListener {
                 clickListListener(pessoa)
             }

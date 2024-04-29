@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -13,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="10dp">
+            android:padding="15dp">
 
             <TextView
                 android:id="@+id/lblNome"
@@ -34,7 +35,7 @@
                 android:id="@+id/lblIdade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Idade: "
+                android:text="Idade:"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -50,17 +51,15 @@
                 android:layout_height="wrap_content"
                 android:text="    Faixa: "
                 android:textSize="16sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
             <TextView
                 android:id="@+id/tvFaixa"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ola"
+                android:text="OK"
                 android:textSize="16sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold"></TextView>
 
             <TextView
                 android:id="@+id/lblSexo"
@@ -71,16 +70,16 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imghomem"
+                android:id="@+id/imgFemin"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                app:srcCompat="@drawable/homenicon" />
+                app:srcCompat="@drawable/femi_img" />
 
             <ImageView
-                android:id="@+id/imgfemale"
+                android:id="@+id/imgMascul"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                app:srcCompat="@drawable/femaleicon" />
+                app:srcCompat="@drawable/restroom_silhouette_18" />
 
 
         </LinearLayout>

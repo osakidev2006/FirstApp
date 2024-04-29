@@ -1,5 +1,6 @@
 package com.rafael.firstapp.view
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,12 +36,16 @@ class AllPessoasFragment : Fragment() {
         return binding.root
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         //Quando clicar em algum item da lista
-        adapter = PessoaAdapter(viewModel.pessoalList.value){
-
+        adapter = PessoaAdapter(viewModel.pessoalList.value){pessoa ->
+          val pessoaBundle = Bundle()
+            pessoaBundle.putInt("pessoaId", pessoa.id)
+            arguments = pessoaBundle
+            findNavController().navigate(R.id.pessoaDetailFragment, arguments)
         }
 
         // Configura a recycler
@@ -62,5 +67,4 @@ class AllPessoasFragment : Fragment() {
         // Carregar as pessoas cadastradas
         viewModel.loadPessoas()
     }
-
 }
